@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  margin-left: 30%;
+  width: 570px;
+  height: auto;
+  margin-top: 100px;
+  font-weight: 1000;
+}
+
+.name {
+  background: rgb(49, 49, 102);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.schoolyear {
+  background: darkblue;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.week {
+  background: rgb(94, 219, 250);
+  text-align: center;
+  font-size: 18px;
+}
+
+.number {
+  text-align: center;
+  background: rgba(202, 57, 4, 0.747);
+}
+
+.time {
+  text-align: center;
+  background: rgb(233, 192, 152);
+}
+
+.class {
+  text-align: center;
+  background: rgb(70, 143, 70);
+  width: 80px;
+  font-size: 5px;
+}
+
+.connection {
+  text-align: center;
+  background: rgb(151, 0, 197);
+  font-size: 18px;
+}
+
+.email {
+  background: #a1a1a1;
+}
