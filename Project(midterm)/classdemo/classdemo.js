@@ -15,7 +15,7 @@ function change(index) {
         break;
       case 4:
         p.innerHTML =
-          '<iframe width=100% height=100% src="./w02-ImgGallery/imgGallery.html">';
+          '<iframe width=100% height=100% src="./w02-ImgGallery/imggallery.html">';
         break;
       case 5:
         p.innerHTML =
