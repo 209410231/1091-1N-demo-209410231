@@ -1,0 +1,135 @@
+//
+.bg {
+  &-dark {
+    background-color: $dark-color;
+  }
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+//
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+//
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &.btn-outline-primary {
+    @include set-background($white-color);
+    color: $primary-color;
+    border: $primary-color 2px solid;
+    &:hover {
+      color: #fff;
+      @include set-background($primary-color);
+    }
+  }
+
+  &.btn-outline-secondary {
+    @include set-background($white-color);
+    color: $secondary-color;
+    border: $secondary-color 2px solid;
+    &:hover {
+      color: #fff;
+      @include set-background($secondary-color);
+    }
+  }
+
+  &.btn-outline-success {
+    @include set-background($white-color);
+    color: $success-color;
+    border: $success-color 2px solid;
+    &:hover {
+      color: #fff;
+      @include set-background($success-color);
+    }
+  }
+
+  &.btn-outline-danger {
+    @include set-background($white-color);
+    color: $danger-color;
+    border: $danger-color 2px solid;
+    &:hover {
+      color: #fff;
+      @include set-background($danger-color);
+    }
+  }
+
+  &.btn-outline-warning {
+    @include set-background($white-color);
+    color: $warning-color;
+    border: $warning-color 2px solid;
+    &:hover {
+      color: #000;
+      @include set-background($warning-color);
+    }
+  }
+
+  &.btn-outline-info {
+    @include set-background($white-color);
+    color: $info-color;
+    border: $info-color 2px solid;
+    &:hover {
+      color: #000;
+      @include set-background($info-color);
+    }
+  }
+
+  &.btn-outline-light {
+    @include set-background($white-color);
+    color: $light-color;
+    border: $light-color 2px solid;
+    &:hover {
+      color: #000;
+      background: lighten($dark-color, 80%);
+    }
+  }
+
+  &.btn-outline-dark {
+    @include set-background($white-color);
+    color: $dark-color;
+    border: $dark-color 2px solid;
+    &:hover {
+      color: #fff;
+      @include set-background($dark-color);
+    }
+  }
+}
