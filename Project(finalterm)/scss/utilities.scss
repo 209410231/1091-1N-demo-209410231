@@ -1,0 +1,90 @@
+.btn {
+  &.sun1 {
+    @include set-color($sun1-color);
+    &:hover {
+      @include set-hover($sun1-color);
+      color: black;
+    }
+  }
+  &.sun2 {
+    @include set-color($sun2-color);
+    &:hover {
+      @include set-hover($sun2-color);
+      color: black;
+    }
+  }
+  &.sun3 {
+    @include set-color($sun3-color);
+    &:hover {
+      @include set-hover($sun3-color);
+      color: black;
+    }
+  }
+  &.blue {
+    @include set-color($blue-color);
+    &:hover {
+      @include set-hover($blue-color);
+    }
+  }
+}
+
+.expege-container{
+  .expage {
+    nav {
+ 
+      &.g1 {
+      background-color: $purple1-color;
+      border: 8px solid $purple4-color;
+      }
+    &.g2 {
+     background-color: $purple2-color;
+     border: 8px solid $purple4-color;
+      }
+    &.g3 {
+      background-color: $purple3-color;
+      border: 8px solid $purple4-color;
+      }
+    }
+  }
+}
+
+.career {
+  section {
+    &.setmeal8 {
+     background: url('../img/a2.jpg')no-repeat center center/cover;
+   }
+
+    &.saizeriya{
+      background: url('../img/a3.jpg')no-repeat center center/cover;
+    }
+
+    &.sazanka{
+      background: url('../img/a1.jpg')no-repeat center center/cover;
+      h2 {
+        color: $light-color;
+      }
+      p {
+        color: $light-color;
+      }
+      
+    }
+  }
+}
+
+.academic {
+  .academic-page {
+    .primary {
+      background: url('../img/b5.jpg')no-repeat center center/cover;
+    } 
+    .secondary {
+      background: url('../img/b6.jpg')no-repeat center center/cover;
+    }
+    .high {
+      background: url('../img/b7.jpg')no-repeat center center/cover;
+    }
+    .university {
+      background: url('../img/b8.jpg')no-repeat center center/cover;
+    }
+  }
+}
+

@@ -156,7 +156,7 @@ section {
     font-size: 13px;
     background: #4b4a4a;
     border: rgb(24, 1, 31) 2px solid;
-    border-radius: 20px;
+    border-radius: 1rem;
   }
   
   .main-nav .main-menu {

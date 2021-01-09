@@ -1,0 +1,33 @@
+$mild-color: #EEDBD1;
+$mild2-color:#c2fddd88;
+$bright-color:#f05837;
+$blood-color:#eb1a1a;
+$dark-color: #26292b;
+$light-color: #f4f4f4;
+$indigo-color:#0d3f66;
+$blue-color:#36688D;
+$sun1-color:#F49F05;
+$sun2-color:#F18904;
+$sun3-color:#b6660b;
+$purple1-color:#ABA6BF;
+$purple2-color:#7180be;
+$purple3-color:#6f70b3;
+$purple4-color:#4e2b74ad;
+$min-width:40rem;
+$max-width: 150rem;
+
+
+@mixin set-color($color) {
+  color: $color;
+  border: 0.5rem solid $color;
+  background-color: transparent;
+}
+  
+@mixin set-hover($color) {
+  color: #fff;
+  background-color: ($color);
+}
+
+@mixin customShadow($size) {
+  box-shadow: -$size $size 0 0 rgba(0, 0, 0, 0.2);
+}
