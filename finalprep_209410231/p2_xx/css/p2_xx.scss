@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 148, 240);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 25rem;
+    margin: 5rem auto 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+
+
+    .pricing-plan {
+        height: 45rem;
+        width: 25rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 2.5rem 2rem;
+        border-right: 1px  rgb(36, 148, 240) solid;
+
+        &.aaa {
+            border-right:none;
+        }
+
+        .pricing-img {
+            height: 15rem;
+            width: 80%;
+            object-fit: cover;
+        }
+
+        .pricing-header {
+            color: #666;
+            font-size: 1.6rem;
+            margin-top: 0.5rem;
+        }
+
+        .pricing-features {
+            margin-top: 4rem;
+            text-align: center;
+            .pricing-features-item {
+                color: rgb(36, 148, 240);
+                font-size: 1.4rem;
+                padding: 1.5rem 0;
+                border-top: rgb(36, 148, 240) solid 1px;
+
+                &.aaa {
+                    border-bottom: rgb(36, 148, 240) solid 1px;
+                }
+            }
+        }
+        .pricing-price {
+            color:  rgb(30, 99, 155);
+            font-size: 2.5rem;
+            font-weight: bolder;
+            padding: 1.5rem 0;
+        }
+
+        .pricing-button {
+            padding: 1rem 3rem;
+            background-color: transparent;
+            border:  rgb(36, 148, 240) solid 1px;
+            border-radius: 0.8rem;
+            font-size: 1.2rem;
+            color:  rgb(36, 148, 240);
+
+            &:hover {
+                background-color:  rgb(36, 148, 240);
+                color:  white;
+            }
+        }
+        
+    }
+}
+
+// Phone Landscape
+@media screen and (min-width: 480px) {
+    .panel {
+        width: 25rem;
+  }
+}
+  // Tablet Portrait
+  @media screen and (min-width: 768px) {
+    .panel {
+        width: 50rem;
+        .pricing-plan {
+            margin-top: 2rem;
+        }
+  }
+  }
+  // Tablet Landscape
+  @media screen and (min-width: 1024px) {
+    .panel {
+        width: 50rem;
+        .pricing-plan {
+            margin-top: 2rem;
+        }
+  }
+  }
+  // Desktop
+  @media screen and (min-width: 1224px) {
+    .panel {
+        width: 75rem;
+  }
+  }
+  // Large Desktop
+  @media screen and (min-width: 1824px) {
+    .panel {
+        width: 75rem;
+  }
+  }
+  
