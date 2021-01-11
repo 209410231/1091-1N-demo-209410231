@@ -28,27 +28,39 @@
   }
 }
 
-.expege-container{
+.explan-page{
   .expage {
     nav {
  
       &.g1 {
       background-color: $purple1-color;
       border: 8px solid $purple4-color;
+
+      &:hover {
+        opacity: 0.9;
+      }
       }
     &.g2 {
      background-color: $purple2-color;
      border: 8px solid $purple4-color;
+
+     &:hover {
+      opacity: 0.9;
+    }
       }
     &.g3 {
       background-color: $purple3-color;
       border: 8px solid $purple4-color;
+
+      &:hover {
+        opacity: 0.9;
+      }
       }
     }
   }
 }
 
-.career {
+.career-page {
   section {
     &.setmeal8 {
      background: url('../img/a2.jpg')no-repeat center center/cover;
@@ -60,19 +72,31 @@
 
     &.sazanka{
       background: url('../img/a1.jpg')no-repeat center center/cover;
-      h2 {
-        color: $light-color;
-      }
-      p {
-        color: $light-color;
-      }
       
+      .content {
+        h2 {
+          color: $light-color;
+        }
+        p {
+          color: $light-color;
+        }
+        
+      .btn {
+        background-color: $light-color;
+        color: $dark-color;
+
+        &:hover {
+          color: $light-color;
+          background-color: $dark-color;
+        }
+      }
+      }
     }
   }
 }
 
-.academic {
-  .academic-page {
+.academic-page {
+  .academic {
     .primary {
       background: url('../img/b5.jpg')no-repeat center center/cover;
     } 

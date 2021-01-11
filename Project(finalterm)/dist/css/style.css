@@ -45,54 +45,76 @@
   background-color: #36688D;
 }
 
-.expege-container .expage nav.g1 {
+.explan-page .expage nav.g1 {
   background-color: #ABA6BF;
   border: 8px solid #4e2b74ad;
 }
 
-.expege-container .expage nav.g2 {
+.explan-page .expage nav.g1:hover {
+  opacity: 0.9;
+}
+
+.explan-page .expage nav.g2 {
   background-color: #7180be;
   border: 8px solid #4e2b74ad;
 }
 
-.expege-container .expage nav.g3 {
+.explan-page .expage nav.g2:hover {
+  opacity: 0.9;
+}
+
+.explan-page .expage nav.g3 {
   background-color: #6f70b3;
   border: 8px solid #4e2b74ad;
 }
 
-.career section.setmeal8 {
+.explan-page .expage nav.g3:hover {
+  opacity: 0.9;
+}
+
+.career-page section.setmeal8 {
   background: url("../img/a2.jpg") no-repeat center center/cover;
 }
 
-.career section.saizeriya {
+.career-page section.saizeriya {
   background: url("../img/a3.jpg") no-repeat center center/cover;
 }
 
-.career section.sazanka {
+.career-page section.sazanka {
   background: url("../img/a1.jpg") no-repeat center center/cover;
 }
 
-.career section.sazanka h2 {
+.career-page section.sazanka .content h2 {
   color: #f4f4f4;
 }
 
-.career section.sazanka p {
+.career-page section.sazanka .content p {
   color: #f4f4f4;
 }
 
-.academic .academic-page .primary {
+.career-page section.sazanka .content .btn {
+  background-color: #f4f4f4;
+  color: #26292b;
+}
+
+.career-page section.sazanka .content .btn:hover {
+  color: #f4f4f4;
+  background-color: #26292b;
+}
+
+.academic-page .academic .primary {
   background: url("../img/b5.jpg") no-repeat center center/cover;
 }
 
-.academic .academic-page .secondary {
+.academic-page .academic .secondary {
   background: url("../img/b6.jpg") no-repeat center center/cover;
 }
 
-.academic .academic-page .high {
+.academic-page .academic .high {
   background: url("../img/b7.jpg") no-repeat center center/cover;
 }
 
-.academic .academic-page .university {
+.academic-page .academic .university {
   background: url("../img/b8.jpg") no-repeat center center/cover;
 }
 
@@ -171,13 +193,13 @@ ul {
   margin-left: 5rem;
 }
 
-.firstpage {
+.first-page {
   position: relative;
   background: url("../img/firstpage.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
-.firstpage .bkb-firstpage {
+.first-page .bkb-firstpage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +215,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.firstpage .bkb-firstpage h1 {
+.first-page .bkb-firstpage h1 {
   font-size: 3.5rem;
   text-align: center;
   margin: 15rem 0 2rem 0;
@@ -201,7 +223,7 @@ ul {
   padding: 1rem 3rem;
 }
 
-.firstpage .bkb-firstpage h2 {
+.first-page .bkb-firstpage h2 {
   font-size: 2.5rem;
   text-align: center;
   color: #f4f4f4;
@@ -209,7 +231,7 @@ ul {
   margin-bottom: 5rem;
 }
 
-.firstpage .bkb-firstpage .button {
+.first-page .bkb-firstpage .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,7 +248,7 @@ ul {
   transition: all 0.2s ease-in;
 }
 
-.firstpage .bkb-firstpage .button .btn {
+.first-page .bkb-firstpage .button .btn {
   padding: 0.5rem 1.7rem;
   font-size: 1.5rem;
   font-weight: bolder;
@@ -236,11 +258,11 @@ ul {
   border-radius: 1.5rem;
 }
 
-.firstpage .bkb-firstpage .button .btn.blue {
+.first-page .bkb-firstpage .button .btn.blue {
   margin-top: 10rem;
 }
 
-.firstpage .bkb-firstpage .my {
+.first-page .bkb-firstpage .my {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,12 +276,12 @@ ul {
   height: 100%;
 }
 
-.firstpage .bkb-firstpage .my nav {
+.first-page .bkb-firstpage .my nav {
   font-size: 3rem;
   color: #fff;
 }
 
-.main-page {
+.interest-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +293,7 @@ ul {
   width: 80%;
 }
 
-.main-page .title {
+.interest-page .title {
   width: 100%;
   font-size: 1.5rem;
   margin: 5rem 0 2rem 0;
@@ -284,7 +306,7 @@ ul {
           justify-content: space-between;
 }
 
-.main-page .items {
+.interest-page .items {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -295,22 +317,22 @@ ul {
           justify-content: space-between;
 }
 
-.main-page .items h2 {
+.interest-page .items h2 {
   font-size: 3rem;
 }
 
-.main-page .items .collection-item {
+.interest-page .items .collection-item {
   width: 100%;
   height: 40rem;
   padding: 0 2rem;
   overflow: hidden;
 }
 
-.main-page .items .collection-item a {
+.interest-page .items .collection-item a {
   color: #26292b;
 }
 
-.main-page .items .collection-item a img {
+.interest-page .items .collection-item a img {
   width: 100%;
   height: 90%;
   -o-object-fit: cover;
@@ -318,32 +340,32 @@ ul {
   border: 5px solid #0d3f66;
 }
 
-.main-page .items .collection-item a img:hover {
+.interest-page .items .collection-item a img:hover {
   opacity: 0.7;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.main-page .items .collection-item .collection-title {
+.interest-page .items .collection-item .collection-title {
   width: 100%;
   height: 10%;
   text-align: center;
   cursor: pointer;
 }
 
-.main-page .items .collection-item .collection-title .name {
+.interest-page .items .collection-item .collection-title .name {
   font-size: 2.5rem;
   color: #26292b;
 }
 
-.main-page .items .collection-item .collection-title .name:hover {
+.interest-page .items .collection-item .collection-title .name:hover {
   color: #eb1a1a;
   opacity: 0.9;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.academic {
+.academic-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,20 +373,22 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: auto;
 }
 
-.academic .academic-page {
+.academic-page .academic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8rem;
 }
 
-.academic .academic-page div {
+.academic-page .academic div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,37 +400,41 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
-  margin: 0 2rem;
+  height: 40rem;
+  margin: 2rem 2rem;
   border: 5px solid black;
   border-radius: 8rem;
+  overflow: hidden;
 }
 
-.academic .academic-page div a {
+.academic-page .academic div a {
   margin-top: 1.5rem;
 }
 
-.academic .academic-page div a img {
+.academic-page .academic div a img {
   width: 15rem;
   height: 15rem;
   opacity: 0.9;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.academic .academic-page div a img:hover {
+.academic-page .academic div a img:hover {
   opacity: 0.6;
 }
 
-.academic .academic-page div h2 {
+.academic-page .academic div h2 {
   border-top: black 3px solid;
   margin: 1.5rem 0 1.5rem 0;
   font-size: 2rem;
 }
 
-.academic .academic-page div p {
+.academic-page .academic div p {
   font-size: 1.5rem;
   font-weight: bolder;
 }
 
-.career {
+.career-page {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,48 +449,48 @@ ul {
   margin: auto;
 }
 
-.career section {
+.career-page section {
   margin-top: 5rem;
   width: 70%;
   height: 20rem;
   border: 5px solid #26292b;
 }
 
-.career section .content {
+.career-page section .content {
   width: 40%;
-  padding: 50px 0 0 40px;
+  padding: 2rem 0 0 4rem;
 }
 
-.career section .content h2 {
-  font-size: 2rem;
+.career-page section .content h2 {
+  font-size: 2.2rem;
 }
 
-.career section .content p {
-  margin: 10px 0 20px 0;
+.career-page section .content p {
+  margin: 1rem 0 2rem 0;
   font-size: 1.5rem;
   font-weight: bolder;
 }
 
-.career section .content .btn {
+.career-page section .content .btn {
   cursor: pointer;
   display: inline-block;
   border: 0;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 0.8rem 1.5rem;
   background-color: #26292b;
   color: #f4f4f4;
-  font-size: 15px;
+  font-size: 1.2rem;
   opacity: 0.9;
 }
 
-.career section .content .btn:hover {
+.career-page section .content .btn:hover {
   color: #26292b;
   background-color: #f4f4f4;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.expege-container {
+.explan-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,7 +502,7 @@ ul {
   height: 100vh;
 }
 
-.expege-container .expage {
+.explan-page .expage {
   height: 100%;
   width: 80%;
   display: -webkit-box;
@@ -493,13 +521,13 @@ ul {
   margin: auto;
 }
 
-.expege-container .expage .title {
+.explan-page .expage .title {
   text-align: center;
   font-size: 3rem;
   color: #26292b;
 }
 
-.expege-container .expage nav {
+.explan-page .expage nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,24 +543,24 @@ ul {
   border-radius: 1rem;
 }
 
-.expege-container .expage nav p {
+.explan-page .expage nav p {
   font-size: 1.5rem;
   font-weight: bolder;
 }
 
-.expege-container .button {
+.explan-page .button {
   opacity: 0.8;
 }
 
-.expege-container .button a {
+.explan-page .button a {
   color: #26292b;
 }
 
-.expege-container .button a h1 {
+.explan-page .button a h1 {
   font-size: 5rem;
 }
 
-.expege-container .button a h1:hover {
+.explan-page .button a h1:hover {
   color: #6f70b3;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -546,31 +574,58 @@ ul {
     font-size: 0.8rem;
     padding: 0;
   }
-  .firstpage .bkb-firstpage h1 {
+  .first-page .bkb-firstpage h1 {
     font-size: 2rem;
   }
-  .firstpage .bkb-firstpage h2 {
+  .first-page .bkb-firstpage h2 {
     font-size: 1.5rem;
   }
-  .firstpage .bkb-firstpage .button .btn {
+  .first-page .bkb-firstpage .button .btn {
     padding: 0.1rem 1rem;
     font-size: 1rem;
   }
-  .firstpage .bkb-firstpage .button .btn.blue {
+  .first-page .bkb-firstpage .button .btn.blue {
     margin-top: 3rem;
   }
-  .firstpage .bkb-firstpage .my nav {
+  .first-page .bkb-firstpage .my nav {
     font-size: 1rem;
   }
-  .main-page .title {
+  .interest-page .title {
     font-size: 1rem;
   }
-  .main-page .items {
+  .interest-page .items {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .main-page .items h2 {
+  .interest-page .items h2 {
     font-size: 3rem;
+  }
+  .career-page section .content {
+    width: 100%;
+    padding: 2.5rem 0 0 2rem;
+  }
+  .career-page section .content h2 {
+    font-size: 1.5rem;
+  }
+  .career-page section .content p {
+    font-size: 1.1rem;
+  }
+  .career-page section .content .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .explan-page .expage .title {
+    font-size: 2.5rem;
+  }
+  .explan-page .expage nav {
+    height: 7rem;
+    width: 28rem;
+  }
+  .explan-page .expage nav p {
+    font-size: 1rem;
+  }
+  .explan-page .button a h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -582,31 +637,57 @@ ul {
     font-size: 0.8rem;
     padding: 1rem;
   }
-  .firstpage .bkb-firstpage h1 {
+  .first-page .bkb-firstpage h1 {
     font-size: 2.5rem;
   }
-  .firstpage .bkb-firstpage h2 {
+  .first-page .bkb-firstpage h2 {
     font-size: 1.8rem;
   }
-  .firstpage .bkb-firstpage .button .btn {
+  .first-page .bkb-firstpage .button .btn {
     padding: 0.2rem 1.2rem;
     font-size: 1rem;
   }
-  .firstpage .bkb-firstpage .button .btn.blue {
+  .first-page .bkb-firstpage .button .btn.blue {
     margin-top: 5rem;
   }
-  .firstpage .bkb-firstpage .my nav {
+  .first-page .bkb-firstpage .my nav {
     font-size: 1.5rem;
   }
-  .main-page .title {
+  .interest-page .title {
     font-size: 1rem;
   }
-  .main-page .items {
+  .interest-page .items {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .main-page .items h2 {
+  .interest-page .items h2 {
     font-size: 3rem;
+  }
+  .career-page section .content {
+    padding: 2.5rem 0 0 3rem;
+  }
+  .career-page section .content h2 {
+    font-size: 1.8rem;
+  }
+  .career-page section .content p {
+    font-size: 1.2rem;
+  }
+  .career-page section .content .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+  .explan-page .expage .title {
+    font-size: 2.5rem;
+  }
+  .explan-page .expage nav {
+    height: 10rem;
+    width: 40rem;
+  }
+  .explan-page .expage nav p {
+    font-size: 1.3rem;
+  }
+  .explan-page .button a h1 {
+    font-size: 3.2rem;
   }
 }
 
@@ -618,31 +699,53 @@ ul {
     font-size: 1.2rem;
     padding: 1.5rem;
   }
-  .firstpage .bkb-firstpage h1 {
+  .first-page .bkb-firstpage h1 {
     font-size: 3rem;
   }
-  .firstpage .bkb-firstpage h2 {
+  .first-page .bkb-firstpage h2 {
     font-size: 2rem;
   }
-  .firstpage .bkb-firstpage .button .btn {
+  .first-page .bkb-firstpage .button .btn {
     padding: 0.3rem 1.5rem;
     font-size: 1.2rem;
   }
-  .firstpage .bkb-firstpage .button .btn.blue {
+  .first-page .bkb-firstpage .button .btn.blue {
     margin-top: 7rem;
   }
-  .firstpage .bkb-firstpage .my nav {
+  .first-page .bkb-firstpage .my nav {
     font-size: 2rem;
   }
-  .main-page .title {
+  .interest-page .title {
     font-size: 1.5rem;
   }
-  .main-page .items {
+  .interest-page .items {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .main-page .items h2 {
+  .interest-page .items h2 {
     font-size: 3rem;
+  }
+  .career-page section .content {
+    padding: 2rem 0 0 4rem;
+  }
+  .career-page section .content h2 {
+    font-size: 2rem;
+  }
+  .career-page section .content p {
+    font-size: 1.3rem;
+  }
+  .career-page section .content .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .explan-page .expage .title {
+    font-size: 3rem;
+  }
+  .explan-page .expage nav p {
+    font-size: 1.5rem;
+  }
+  .explan-page .button a h1 {
+    font-size: 5rem;
   }
 }
 
@@ -654,31 +757,57 @@ ul {
     font-size: 1.2rem;
     padding: 1.5rem;
   }
-  .firstpage .bkb-firstpage h1 {
+  .first-page .bkb-firstpage h1 {
     font-size: 3.5rem;
   }
-  .firstpage .bkb-firstpage h2 {
+  .first-page .bkb-firstpage h2 {
     font-size: 2.5rem;
   }
-  .firstpage .bkb-firstpage .button .btn {
+  .first-page .bkb-firstpage .button .btn {
     padding: 0.5rem 1.7rem;
     font-size: 1.5rem;
   }
-  .firstpage .bkb-firstpage .button .btn.blue {
+  .first-page .bkb-firstpage .button .btn.blue {
     margin-top: 10rem;
   }
-  .firstpage .bkb-firstpage .my nav {
+  .first-page .bkb-firstpage .my nav {
     font-size: 3rem;
   }
-  .main-page .title {
+  .interest-page .title {
     font-size: 1.5rem;
   }
-  .main-page .items {
+  .interest-page .items {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .main-page .items h2 {
+  .interest-page .items h2 {
     font-size: 3rem;
+  }
+  .career-page section .content {
+    padding: 2rem 0 0 4rem;
+  }
+  .career-page section .content h2 {
+    font-size: 2.2rem;
+  }
+  .career-page section .content p {
+    font-size: 1.5rem;
+  }
+  .career-page section .content .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .explan-page .expage .title {
+    font-size: 3rem;
+  }
+  .explan-page .expage nav {
+    height: 10rem;
+    width: 50rem;
+  }
+  .explan-page .expage nav p {
+    font-size: 1.5rem;
+  }
+  .explan-page .button a h1 {
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -72,7 +72,7 @@ ul {
 }
 
 //index
-.firstpage {
+.first-page {
   position: relative;
   background: url("../img/firstpage.jpg") no-repeat center center/cover;
   height: 100vh;
@@ -139,7 +139,7 @@ ul {
 }
 
 //interest
-.main-page {
+.interest-page {
   display: flex;
   flex-direction: column;
   margin:auto;
@@ -218,16 +218,18 @@ ul {
 }
 
 //academic_career
-.academic {
+.academic-page {
   display: flex;
   height: 100vh;
   justify-content: center;
-  align-items: center;
+
   margin: auto;
 
-  .academic-page {
+  .academic {
     display: flex;
-    height: 40rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
 
 
     
@@ -236,9 +238,11 @@ ul {
       flex-direction: column;
       align-items: center;
       width: 25rem;
-      margin: 0 2rem;
+      height: 40rem;
+      margin: 2rem 2rem;
       border: 5px solid black;
       border-radius: 8rem;
+      overflow: hidden;
 
       a {
         margin-top: 1.5rem;
@@ -246,6 +250,7 @@ ul {
           width: 15rem;
           height: 15rem;
           opacity: 0.9;
+          object-fit: cover;
 
           &:hover {
             opacity: 0.6;
@@ -271,7 +276,7 @@ ul {
 }
 
 //career
-.career {
+.career-page {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -287,14 +292,14 @@ ul {
 
     .content {
       width: 40%;
-      padding: 50px 0 0 40px;
+      padding: 2rem 0 0 4rem;
 
       h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       p {
-        margin: 10px 0 20px 0;
+        margin: 1rem 0 2rem 0;
         font-size: 1.5rem;
         font-weight: bolder;
       }
@@ -304,18 +309,19 @@ ul {
         display: inline-block;
         border: 0;
         font-weight: bold;
-        padding: 10px 20px;
+        padding:0.8rem 1.5rem;
         background-color: $dark-color;
         color: $light-color;
-        font-size: 15px;
+        font-size: 1.2rem;
         opacity: 0.9;
+
+        &:hover {
+          color: $dark-color;
+          background-color: $light-color;
+          transition: all 0.3s ease-in-out;
+        }
       }
-      
-      .btn:hover {
-        color: $dark-color;
-        background-color: $light-color;
-        transition: all 0.3s ease-in-out;
-      }
+
     }
   }
 
@@ -323,7 +329,7 @@ ul {
 }
 
 //explanation
-.expege-container {
+.explan-page {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -385,7 +391,7 @@ ul {
 }
 }
 
-// Phone Landscape -- 每列一張圖片
+// --------------------------------------------
 @media screen and (min-width: 1px) {
   .navbar {
     h1 {
@@ -402,8 +408,7 @@ ul {
     }
   }
 
-  
-  .firstpage {
+  .first-page {
     .bkb-firstpage{
       h1 {
         font-size: 2rem;  
@@ -429,7 +434,7 @@ ul {
   }
   }
 
-  .main-page {
+  .interest-page {
     .title {
       font-size: 1rem;
     }
@@ -442,10 +447,55 @@ ul {
     }
   }
 
+
+  .career-page {
+    section {
+      .content {
+        width: 100%;
+        padding: 2.5rem 0 0 2rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+
+        .btn {
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+  .explan-page {
+    .expage {
+      .title {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        height: 7rem;
+        width: 28rem;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .button {
+      a {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
 }
 
-
-// Tablet Portrait -- 每列兩張圖片
+// --------------------------------------------
 @media screen and (min-width: 768px) {
   .navbar {
     h1 {
@@ -462,8 +512,7 @@ ul {
     }
   }
 
-  
-  .firstpage {
+  .first-page {
     .bkb-firstpage{
       h1 {
         font-size: 2.5rem;  
@@ -488,7 +537,8 @@ ul {
       }
   }
   }
-  .main-page {
+ 
+  .interest-page {
     .title {
       font-size: 1rem;
     }
@@ -501,9 +551,53 @@ ul {
     }
   }
 
-}
+  .career-page {
+    section {
+      .content {
+          padding: 2.5rem 0 0 3rem;
+        h2 {
+          font-size: 1.8rem;
+        }
 
-// Tablet Landscape  -- -- 每列四張圖片
+        p {
+          font-size: 1.2rem;
+        }
+
+        .btn {
+          padding: 0.8rem 1.2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+  .explan-page {
+    .expage {
+      .title {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        height: 10rem;
+        width: 40rem;
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .button {
+      a {
+        h1 {
+          font-size: 3.2rem;
+        }
+      }
+    }
+
+  }
+}
+// --------------------------------------------
 @media screen and (min-width: 1024px){
   .navbar {
     h1 {
@@ -520,7 +614,7 @@ ul {
     }
   }
 
-  .firstpage {
+  .first-page {
     .bkb-firstpage{
       h1 {
         font-size: 3rem;  
@@ -546,7 +640,7 @@ ul {
   }
   }
 
-  .main-page {
+  .interest-page {
     .title {
       font-size: 1.5rem;
     }
@@ -558,8 +652,52 @@ ul {
       }
     }
   }
-}
 
+  .career-page {
+    section {
+      .content {
+        padding: 2rem 0 0 4rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        .btn {
+          padding: 0.8rem 1.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+  }
+
+  .explan-page {
+    .expage {
+      .title {
+        font-size: 3rem;
+      }
+
+      nav {
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .button {
+      a {
+        h1 {
+          font-size: 5rem;
+        }
+      }
+    }
+
+  }
+}
+// --------------------------------------------
 @media screen and (min-width: 1440px){
   .navbar {
     h1 {
@@ -576,8 +714,7 @@ ul {
     }
   }
 
-
-  .firstpage {
+  .first-page {
     .bkb-firstpage{
      h1 {
        font-size: 3.5rem;  
@@ -604,7 +741,7 @@ ul {
     }
   }
 
-  .main-page {
+  .interest-page {
     .title {
       font-size: 1.5rem;
     }
@@ -613,6 +750,51 @@ ul {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       h2 {
         font-size: 3rem;
+      }
+    }
+  }
+
+  .career-page {
+    section {
+      .content {
+        padding: 2rem 0 0 4rem;
+        h2 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        .btn {
+          padding:0.8rem 1.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+  }
+
+  .explan-page {
+    .expage {
+      .title {
+        font-size: 3rem;
+      }
+
+      nav {
+        height: 10rem;
+        width: 50rem;
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .button {
+      a {
+        h1 {
+          font-size: 5rem;
+        }
       }
     }
   }
